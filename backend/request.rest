@@ -1,0 +1,24 @@
+GET GET http://localhost:5000/notes
+
+###
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "title": "Harian 2",
+    "content": "Habis ini Front End tapi capek mending tidur"
+}
+
+###
+PUT http://localhost:5000/update-notes/1
+Content-Type: application/json
+
+{
+    "title": "Harian 1",
+    "content": "Backend sementara aman"
+}
+
+###
+DELETE http://localhost:5000/delete-notes/2
+
+
