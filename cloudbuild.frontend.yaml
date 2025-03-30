@@ -16,7 +16,7 @@ steps:
       - name: "npm-cache"
         path: /root/.npm
 
-  # Step 2: Build frontend dengan injeksi VITE_API_URL
+  # Step 2: Build frontend
   - name: "gcr.io/cloud-builders/npm"
     entrypoint: bash
     args:
