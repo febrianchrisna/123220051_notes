@@ -8,7 +8,7 @@ handlers:
     upload: public/index.html
 
   - url: /(.*)
-    static_files: public/\1
-    upload: public/(.*)
+    static_files: \1
+    upload: (.*)
 
 default_expiration: "1h"
