@@ -14,7 +14,7 @@ steps:
       [
         "run",
         "deploy",
-        "be-rest",
+        "febrian-be-auth",
         "--image",
         "gcr.io/$PROJECT_ID/febrian-be-auth",
         "--timeout",
