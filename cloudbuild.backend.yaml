@@ -2,7 +2,7 @@ steps:
   - name: "gcr.io/cloud-builders/gsutil"
     args: ["cp", "${_ENV}", ".env"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/febrian-be-auth", "-f", "docker/Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/febrian-be-auth", "-f", "backend/Dockerfile", "."]
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/$PROJECT_ID/febrian-be-auth"]
   - name: "gcr.io/cloud-builders/gcloud"
