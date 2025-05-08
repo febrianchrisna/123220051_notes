@@ -23,5 +23,4 @@ steps:
       ]
 
 options:
-  logging: CLOUD_LOGGING_ONLY  # Or NONE if you don't want logs
-  logs_bucket: "gs://your-log-bucket-name"  # Replace with your actual bucket name
+  logging: CLOUD_LOGGING_ONLY
