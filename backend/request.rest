@@ -1,7 +1,29 @@
 GET GET http://localhost:5000/notes
 
+### Register
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email": "aa@gmail.com",
+    "username": "admin",
+    "password": "admin"
+}
+
+### Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "admin"
+}
+
+
+
 ###
 POST http://localhost:5000/add-notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiYWRtaW4iLCJjcmVhdGVkQXQiOiIyMDI1LTA1LTA4VDE1OjE0OjI2LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDI1LTA1LTA4VDE1OjE4OjExLjAwMFoiLCJpYXQiOjE3NDY3MTc1MzgsImV4cCI6MTc0NjcxNzU2OH0.ePuyQTR-YJwSWa5M_k8jYul_-QSZ9R9VzfXrIfVZ13Y
 Content-Type: application/json
 
 {
